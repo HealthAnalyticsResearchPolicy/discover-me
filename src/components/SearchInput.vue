@@ -12,6 +12,7 @@
           <label for="search" class="search-label h1">I'm looking for: </label>
           <input type="text" id="search" class="search-text h2 mx-3">
           <span class="h1">.</span>
+          <span v-if="feedback">{{ feedback }}</span>
         </b-col>
       </b-row>
     </b-col>
@@ -20,7 +21,12 @@
 
 <script>
 export default {
-  name: 'SearchInput'
+  name: 'SearchInput',
+  data() {
+    return {
+      feedback: null,
+    }
+  },
 }
 </script>
 
