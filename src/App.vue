@@ -1,20 +1,21 @@
 <template>
   <div id="app">
     <NavigationBar></NavigationBar>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      <SearchInput></SearchInput>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import NavigationBar from './components/NavigationBar.vue'
+import SearchInput from './components/SearchInput.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    NavigationBar
-  }
+    NavigationBar,
+    SearchInput
+  },
 }
 </script>
