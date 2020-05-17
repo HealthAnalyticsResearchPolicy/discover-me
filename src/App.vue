@@ -4,6 +4,7 @@
     <b-container>
       <SearchInput></SearchInput>
       <DataIndex></DataIndex>
+      <router-view></router-view>
     </b-container>
   </div>
 </template>

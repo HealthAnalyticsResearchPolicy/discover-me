@@ -8,18 +8,10 @@
         size="lg"
         variant="secondary"
         :block="true"
-        v-b-modal="'data-index-modal'"
+        :to="{ name: 'dataIndex' }"
       >
         Data Index
       </b-button>
-      <b-modal
-        id="data-index-modal"
-        size="lg"
-        title="Data Index"
-        :hide-footer="true"
-      >
-        body goes here
-      </b-modal>
     </b-col>
   </b-row>
 </template>
